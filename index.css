@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-weight: "Open Sans", sans-serif;
+    color: #444444;
+}
+
+
+.hero{
+    width: 100%;
+    height: 650px;
+    background-image: url(./images/hero-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.hero-bg{
+    width: 100%;
+    height: 650px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#header{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.logo{
+    font-size: 2rem;
+    letter-spacing: 2px;
+    padding-top: 20px;
+    text-transform: uppercase;
+}
+
+.logo a span{
+    color: #db9a17;
+}
+
+#navbar ul{
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    padding-top: 10px;
+}
+
+#navbar ul li a{
+    color: #fff;
+}
+
+#navbar ul li a:hover{
+    text-decoration: none;
+    color: #db9a17;
+}
+
+#navbar ul li a .active{
+    color: #db9a17;
+}
+
+#navbar ul li .dropdown{
+    position: relative;
+}
+
+.navbar .dropdown ul {
+    top: calc(100% + 30px);
+    margin: 0;
+    z-index: 99;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    transition: 0.3s;
+  }
+
+#navbar ul li .drop{
+    position: absolute;
+    display: none;
+}
+
+.dropdown li:nth-child(6):hover .drop{
+    display: block;
+    z-index: 1;
+}
+
+.dropdown .drop .down{
+    position: absolute;
+    display: none;
+}
+
+.dropdown .drop ul li:nth-child(1):hover .down{
+    display: block;
+    z-index: 2;
+}
+
+#header button, #header button a{
+    background: none;
+    color: #fff;
+    margin: 16px;
+    padding: 2px;    
+}
+
+#header button{
+    border: 2px solid #db9a17;
+    border-radius: 5px;
+}
+
+#header button:hover{
+    background-color: #db9a17;
+}
+
+#header button a:hover{
+    color: #000;
+    text-decoration: none;
+}
+
+#hero{
+    padding-top: 10%;
+}
+
+#power h1{
+    font-size: 3.5rem;
+    text-transform: bold;
+}
+
+#power h2{
+    font-size: 1.5rem;
+}
+
+#iconbox a{
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+#iconbox a:hover{
+    color: #db9a17;
+    text-decoration: none;
+}
+
+.icon-box{
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #fff;
+}
+
+.icon-box:hover{
+    text-align: center;
+    border: 1px solid #db9a17;
+}
+
+.icon-box h4 a{
+    color: #000;
+}
+
+.icon-box h4 a:hover, .icon-box p:hover{
+    text-decoration: none;
+    color: #db9a17;
+}
+
+.about{
+    width: 100%;
+    height: 950px;
+}
+
+.about .row{
+    width: 100%;
+    height: 400px;
+}
+
+.about .row .col{
+    width: 50%;
+}
+
+.about .row .col img{
+    width: 100%;
+}
+
+.services .service-title h2{
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+.services .service-title h1{
+    text-transform: capitalize;
+}
+
+.services .cta-img{
+    width: 100%;
+    height: 250px;
+    background-image: url(./images/cta-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.services .cta-clr{
+    width: 100%;
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.services button a{
+    background: none;
+    color: #fff;
+    margin: 16px;
+}
+
+.services button{
+    padding: 10px;
+    background: none;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+.services button:hover{
+    border: none;
+    background-color: #db9a17;
+}
+
+.services button a:hover{
+    color: #000;
+    text-decoration: none;
+}
+
+.team .member .member-img img{
+    width: 100%;
+    height: 250px;
+}
+
+.contact button{
+    background-color: #db9a17;
+    color: #000;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer .footer-info h3 span{
+    color: #db9a17;
+}
+
+.footer .footer-links a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer .footer-links a:hover{
+    text-decoration: none;
+}
+
+.credits a{
+    color: #db9a17;
+    text-decoration: none;
+}
+
+.credits a:hover{
+    color: #db9a17;
+    text-decoration: none;
+}
+
+.footer .footer-newsletter form input{
+    padding: 6px;
+}
+
+.footer .footer-newsletter form button{
+    border: none;
+    padding: 8px;
+    background-color: #daa438;
+
+}
+
+.footer-bg{
+    background-color: #000;
+}
+
+@media screen and (max-width:1200px){
+    .about{
+        width: 100%;
+        height: 1400px;
+    }
+
+    .hero, .hero-bg{
+        height:800px
+    }
+
+    #hero{
+        padding-top: 20%;
+    }
+}
